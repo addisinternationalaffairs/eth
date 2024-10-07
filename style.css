@@ -1,0 +1,246 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  }
+  
+#banner {
+  display: block;
+  background: linear-gradient(rgba(0,0,0,0.3), rgb(0, 0, 100)),url("background-pattern.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+header {
+  background: rgb(0, 0, 100);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 2s ease-in-out;
+  box-shadow: 0 0 20px 5px darkblue;
+}
+
+#head-container {
+  padding: 1px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+}
+
+.head-title h4 {
+  position: relative;
+  top: 40%;
+  color: white;
+  border: 1px solid black;
+}
+
+.banner-title {
+  text-align: center;
+  color: white;
+}
+.banner-title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 18%;
+}
+
+#sideNav {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  right: -200px;
+  top: 100%;
+  background: #009688;
+  z-index: 2;
+  transition: 0.8s;
+}
+nav ul li {
+  list-style: none;
+  margin: 15px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+#menuBtn {
+  width: 50px;
+  height: 50px;
+  background: #009688;
+  text-align: center;
+  right: 0px;
+  top: 50%;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 3;
+}
+#menuBtn img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .banner-title h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.head-title h2 {
+  font-size: 18px;
+}
+}
+
+/*--About Section--*/
+
+#about {
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgb(241, 244, 251);
+
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.section-title h1 {
+  font-size: 36px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+/*--card section--*/
+
+#card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  width: 80%;
+  border-bottom: 1px solid gray;
+
+}
+.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 5px 5px;
+  text-align: center;
+  background-color: white;
+  background-position: center;
+}
+
+.cards-image {
+  background-size: cover;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+}
+.card-1 {
+  background-image: url("addis-night.jpg");
+
+}
+
+.card-2 {
+  background-image: url(addis-night.jpg);
+
+}
+
+.card-3 {
+  background-image: url(addis-night.jpg);
+}
+
+.card-4 {
+  background-image: url(addis-night.jpg);
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.06);
+  transition: all 2s ease;
+}
+
+h3 {
+  color: black;
+  text-shadow: none;
+}
+
+.card p {
+  color: black;
+  text-shadow: none;
+  font-size: 14px;
+}
+
+
+/*--footer section--*/
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 5px 0 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.row { 
+  width: 100%; 
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+  color: white;
+  background: rgb(0, 0, 100);
+
+}
+
+.col {
+  flex-basis: 15%;
+  padding: 10px;
+  margin: 10px 5px 10px;
+
+}
+.col a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.col h3 {
+  width: 100%;
+  position: relative;
+  color: white;
+  font-weight: bold;
+
+}
+.email-id {
+  width: 100%;
+  margin: 10px 0;
+}
+
+ul li {
+  list-style: none;
+  margin: 3px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
