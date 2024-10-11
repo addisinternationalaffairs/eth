@@ -23,6 +23,73 @@ header {
   box-shadow: 0 0 20px 5px darkblue;
 }
 
+
+
+ /*--navigation bar--*/
+
+
+.menu-bar {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-bar ul .menu-bar li {
+  margin: 0;
+  padding: 0;
+}
+.menu-bar ul {
+  display: block;
+  flex-wrap: nowrap;
+  width: 100%;
+  list-style: none;
+}
+.menu-bar li {
+  position: relative;
+  float: left;
+  width: auto;
+  
+  }
+.menu-bar a {
+  display: block;
+  font-size: 16px;
+  color: white;
+  padding: 10px 35px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-bar li:hover a {
+  background: rgb(40, 48, 45);
+}
+
+.dropdwn-content {
+  left: 0%;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+}
+
+
+li:hover ul.dropdwn-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdwn-content a:hover {
+  background: #202726;
+}
+
+.dropdwn-content a {
+  background-color: black;
+}
+
+.dropdwn-content li {
+  float: none;
+  width: 100%;
+}
+
+
 #head-container {
   padding: 1px;
   display: flex;
@@ -71,6 +138,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
+  
 }
 #menuBtn {
   width: 50px;
@@ -78,7 +146,7 @@ nav ul li a {
   background: #009688;
   text-align: center;
   right: 0px;
-  top: 50%;
+  top: 5%;
   border-radius: 3px;
   position: absolute;
   z-index: 3;
@@ -89,9 +157,9 @@ nav ul li a {
   margin-top: 5px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .banner-title h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -100,7 +168,7 @@ nav ul li a {
 }
 }
 
-/*--About Section--*/
+/*--about section--*/
 
 #about {
   width: 100%;
@@ -150,21 +218,22 @@ nav ul li a {
 
 }
 .card-1 {
-  background-image: url("addis-night.jpg");
+  background-image: url("images/sister-city.png");
 
 }
 
 .card-2 {
-  background-image: url(addis-night.jpg);
+  background-color: whitesmoke;
+  background-image: url("images/partnership.png");
 
 }
 
 .card-3 {
-  background-image: url(addis-night.jpg);
+  background-image: url("images/diaspora.png");
 }
 
 .card-4 {
-  background-image: url(addis-night.jpg);
+  background-image: url("images/know-tech.png");
 }
 
 .card:hover {
