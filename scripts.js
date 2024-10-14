@@ -18,15 +18,16 @@ menuBtn.onclick=function(){
     }
 };
 
-var body = document.body;
-var lastScroll= 0;
 
-window.addEventListener('scroll', function(){
-    var currentScroll = window.pageYOffset;
-    
-    if (currentScroll <= 0) {
-       body.classList.remove("scroll-up");
-    }
-    
-    lastScroll = currentScroll;   
-});
+window.onscroll = function() {myFunction();};
+
+var header = document.getElementById("head-wrapper");
+var sticky = header.offsetTop;
+
+function myFunction() {
+   if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      } else {
+      header.classList.remove("sticky");
+      }
+   }

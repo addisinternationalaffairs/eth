@@ -1,9 +1,9 @@
-
 *{
   margin: 0;
   padding: 0;
   }
   
+
 header {
   position: sticky;
   top: 0;
@@ -42,29 +42,7 @@ img {
   border: 1px solid black;
 }
 
-#banner {
-  
-  display: block;
-  flex-wrap: nowrap;
-  background: linear-gradient(rgba(0,0,0,0.3), rgb(0, 0, 100)),url("background-pattern.png");
-  background-size: cover;
-  background-position: center;
-  padding: 5em;
-  
-}
-
-.banner-title {
-  text-align: center;
-  color: white;
-}
-.banner-title h1 {
-  font-size: 35px;
-  font-weight: bold;
-  padding: 0.5em;
-}
-
  /*--navigation bar--*/
-
 
 .menu-bar {
   display: flex;
@@ -150,162 +128,66 @@ img {
 }
 }
 
-
-#sideNav {
-  width: 200px;
-  position: absolute;
-  right: -200px;
-  top: 100%;
-  background: linear-gradient(rgba(0,0,0,0.3), rgb(0, 0, 100));
-  z-index: 3;
-  transition: 1s;
-  overflow: auto; 
+#banner {
+  
+  display: block;
+  flex-wrap: nowrap;
+  background: linear-gradient(rgba(0,0,0,0.3), rgb(0, 0, 100)),url("addis-night.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em;
+  
 }
 
-  
-#sideNav ul li {
-  list-style: none;
+.banner-title {
+  text-align: center;
+  color: white;
+}
+.banner-title h1 {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0.5em;
+}
+/*--team section--*/
+
+#team-container {
+  display: inline-block;
+  flex-wrap: nowrap;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgb(0, 0, 100)),url("background-pattern.png");
+  }
+.row-1 {
+  display: flex;
+  flex-basis: 40%;
   padding: 1em;
   border-bottom: 0.5px solid white;
-  border-radius: 5px;
-}
-
-#sideNav ul li a {
-  text-decoration: none;
+  }
+.col-1 {
   color: white;
-  font-size: 17px;
-}
-#sideNav ul li:hover {
-  background: rgb(0, 100, 10);
-  transform: scale(1.03);
-  transition: all 0.9s ease;
-}
-#menuBtn {
-  width: 50px;
-  height: 50px;
-  background: rgb(0, 0, 100);
-  text-align: center;
-  right: 0px;
-  top: 5%;
-  border-radius: 3px;
-  position: absolute;
-  z-index: 3;
-}
-#menuBtn img {
-  width: 40px;
-  height: 40px;
-  margin-top: 5px;
-}
-
-@media screen and (max-width: 600px) {
-  .banner-title h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-}
-
-.head-title h2 {
-  font-size: 16px;
-}
-
-/*--about section--*/
-
-#about {
-  width: 100%;
-  padding: 30px 0;
-  background-color: rgb(241, 244, 251);
-
-}
-.section-title {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.section-title h1 {
-  font-size: 36px;
-  color: darkblue;
-  font-weight: bold;
-}
-
-/*--card section--*/
-
-#card-container {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: auto;
-  width: 80%;
-  border-bottom: 1px solid gray;
-
-}
-.card {
+  text-align: justify;
+  padding: 0.5em;
+  }
+.col-1 img {
   width: 250px;
-  height: 350px;
-  border-radius: 10px;
-  padding: 5px 5px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 5px 5px;
-  text-align: center;
-  background-color: white;
-  background-position: center;
-}
-
-.cards-image {
-  background-size: cover;
-  height: 150px;
-  margin-bottom: 10px;
+  height: 200px;
   border-radius: 5px;
-
-}
-.card-1 {
-  background-image: url("images/sister-city.png");
-
-}
-
-.card-2 {
-  background-color: whitesmoke;
-  background-image: url("images/partnership.png");
-
-}
-
-.card-3 {
-  background-image: url("images/diaspora.png");
-}
-
-.card-4 {
-  background-image: url("images/know-tech.png");
-}
-
-.card:hover {
-  background-color: rgb(0, 0, 100);
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.06);
-  transition: all 2s ease;
-}
-
-h3 {
-  color: black;
-  text-shadow: none;
-}
-  
-.card:hover h3 {
-  color: white;
   }
-
-.card p {
-  color: black;
-  text-shadow: none;
-  font-size: 14px;
-  
-}
-.card:hover p {
-  color: white;
+.col-1 h5 {
+  padding: 0.3em;
+  text-align: center;
+  font-size: 120%;
   }
-/*--news section--*/
-  
-
+.col-1 h3 {
+  padding: 0.5em;
+  }
+.col-1 p {
+  padding: 0.5em;
+  font-size: 16px;
+  }
+.col-1 img:hover {
+  transform: scale(1.06, 1.06);
+  transition: all 0.9s ease-in-out;
+  }
 /*--footer section--*/
 
 .footer {
