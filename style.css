@@ -258,22 +258,22 @@ img {
 
 }
 .card-1 {
-  background-image: url("images/sister-city.png");
+  background-image: url("sister-city.png");
 
 }
 
 .card-2 {
   background-color: whitesmoke;
-  background-image: url("images/partnership.png");
+  background-image: url("partnership.png");
 
 }
 
 .card-3 {
-  background-image: url("images/diaspora.png");
+  background-image: url("diaspora.png");
 }
 
 .card-4 {
-  background-image: url("images/know-tech.png");
+  background-image: url("know-tech.png");
 }
 
 .card:hover {
