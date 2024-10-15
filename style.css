@@ -4,6 +4,20 @@
   padding: 0;
   box-sizing: border-box;
   }
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(49, 48, 48)
+  }
 
 
 #sideNav {
