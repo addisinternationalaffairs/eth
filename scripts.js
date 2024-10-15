@@ -8,12 +8,12 @@ menu.addEventListener('click', function(){
     sideNav.classList.toggle('width');
 });
 menuBtn.onclick=function(){
-    if(sideNav.style.right=="-200px") {
-        sideNav.style.right="0px";
+    if(sideNav.style.left=="-200px") {
+        sideNav.style.left="0px";
         menu.src= "close-icon.png";
     }
     else {
-       sideNav.style.right="-200px";
+       sideNav.style.left="-200px";
        menu.src= "menu-icon.png";
     }
 };
