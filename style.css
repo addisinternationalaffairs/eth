@@ -16,7 +16,8 @@
   background: rgb(0, 0, 100);
   z-index: 1;
   transition: 1s;
-  overflow-Y: scroll; 
+  overflow-x: hidden;
+  overflow-y: scroll; 
 }
 
   
