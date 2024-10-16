@@ -33,6 +33,8 @@
   }
   ::-webkit-scrollbar-button {
     width: 6px;
+    background: gray;
+    border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(49, 48, 48)
