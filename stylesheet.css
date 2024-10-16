@@ -2,14 +2,35 @@
   margin: 0;
   padding: 0;
   }
-  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 6px;
+    background: gray;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(49, 48, 48)
+  }
+  ::-webkit-scrollbar-button:hover {
+    background: rgb(49, 48, 48)
+    }
 
 header {
   display: flex;
   flex-wrap: nowrap;
   position: sticky;
   top: 0;
-  background: rgb(0, 0, 100);
+  background: linear-gradient(rgba(0, 0, 0, 1), rgb(0, 0, 100));
   background-position: center;
   width: 100%;
   left: 0;
@@ -23,7 +44,7 @@ header {
   flex-wrap: nowrap;
   position: sticky;
   top: 0;
-    margin-left: 2em;
+  margin-left: 2em;
   }
 .head-container {
   padding: 1px;
@@ -57,9 +78,10 @@ img {
 }
 
 .menu-bar ul .menu-bar li {
+  display: flex;
+  flex-wrap: nowrap;
   margin: 5px;
   padding: 0px;
-  
 }
 .menu-bar ul {
   display: block;
@@ -176,6 +198,7 @@ img {
   width: 250px;
   height: 200px;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   }
 .col-1 h5 {
   padding: 0.3em;
@@ -211,7 +234,7 @@ img {
   justify-content: space-between;
   font-size: 15px;
   color: white;
-  background: rgb(0, 0, 100);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 0, 100));
 
 }
 
@@ -280,7 +303,7 @@ cursor: pointer;
 transform: scale(1.04);
 }
 .row-bottom {
-background: rgb(0, 0, 100);
+background: linear-gradient(to top, rgba(0,0,0,1), rgb(0, 100, 0));
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 text-align: center;
