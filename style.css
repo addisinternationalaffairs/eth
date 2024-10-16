@@ -2,9 +2,25 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   }
-::-webkit-scrollbar {
+  
+
+  #sideNav {
+
+  width: 200px;
+  height: 520px;
+  position: absolute;
+  margin-bottom: 1em;
+  left: -200px;
+  top: 100%;
+  background: linear-gradient(rgba(0,0,0,0.5), rgb(0, 0, 100));
+  z-index: 1;
+  transition: 1s;
+  overflow-x: hidden;
+  overflow-Y: scroll; 
+}
+
+  ::-webkit-scrollbar {
     width: 6px;
   }
   ::-webkit-scrollbar-track {
@@ -18,22 +34,12 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(49, 48, 48)
   }
+#sideNav h3 {
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  }
 
-
-#sideNav {
-  width: 200px;
-  height: 530px;
-  position: absolute;
-  left: -200px;
-  top: 100%;
-  background: rgb(0, 0, 100);
-  z-index: 1;
-  transition: 1s;
-  overflow-x: hidden;
-  overflow-y: scroll; 
-}
-
-  
 #sideNav ul li {
   list-style: none;
   padding: 1em;
@@ -52,24 +58,26 @@
   transition: all 0.9s ease;
 }
 #menuBtn {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  padding: 0.5em;
-  top: 15%;
-  border-radius: 3px;
+  width: 55px;
+  height: 55px;
+  margin: 0.5em;
+  background: transparent;
   position: absolute;
+  text-align: center;
+  top: 50%;
+  float: left;
   z-index: 3;
+  
 }
 #menuBtn img {
   width: 40px;
   height: 40px;
-  left: 1px;
-  margin-top: 5px;
+  
 }
 
-#menuBtn img:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgb(61, 60, 60));
+#menuBtn:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 100, 100));
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -101,18 +109,18 @@ header {
   flex-wrap: nowrap;
   position: sticky;
   top: 0;
-  margin-left: 4em;
+  margin-left: 2em;
   }
 .head-container {
-  padding: 1px;
   display: flex;
   flex-wrap: nowrap;
+  padding: 1px;
 }
 
 img {
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   margin: 0.5em;
 }
 
@@ -152,9 +160,14 @@ img {
   flex-wrap: nowrap;
   width: 100%;
   text-align: center;
+  float: left;
+  margin-left: 10em;
+    
 }
 
 .menu-bar ul .menu-bar li {
+  display: flex;
+  flex-wrap: nowrap;
   margin: 5px;
   padding: 0px;
   
@@ -271,7 +284,7 @@ img {
   cursor: pointer;
   margin: 5px 5px;
   text-align: center;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.4) rgb(62, 62, 62));
+  background-color: rgba(0, 0, 0, 0.4);
   background-position: center;
 }
 
