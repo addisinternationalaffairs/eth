@@ -181,13 +181,16 @@ img {
   display: inline-block;
   flex-wrap: nowrap;
   width: 100%;
-  background: linear-gradient(to bottom right, rgba(0,0,0,0.5), rgb(0, 0, 100)),url("background-pattern.png");
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.4), rgb(0, 20, 100)),url("background-pattern.png");
   }
 .row-1 {
   display: flex;
+  width: 85%;
+  margin-left: 7%;
+  margin-right: 7%;
   flex-basis: 40%;
   padding: 1em;
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.1px solid white;
   }
 .col-1 {
   color: white;
@@ -314,11 +317,27 @@ margin-left: 12%;
 margin-right: 12%;
 color: white;
 padding: 0.5em;
-border-top: 1px solid white;
+font-size: 14px;
 }
 .row-bottom a {
 color: white;
 }
 .row-bottom a:hover {
 color: gold;
+}
+
+/*--cities section--*/
+.cities-container {
+  display: block;
+  background:-webkit-linear-gradient(rgba(0,0,0,1), rgb(0, 100, 0));
+  text-align: justify;
+
+}
+.cities-container p {
+  width: 800px;
+  margin-left: 15em;
+  color: white;
+  font-size: 17px;
+  
+  
 }
